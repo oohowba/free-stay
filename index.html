@@ -114,8 +114,7 @@
       font-size: clamp(15px, 4.1vw, 18px);
       color: var(--muted);
     }
-    .grid2 { display: grid; gap: 12px; }
-    .story-grid, .summary-grid { display: grid; gap: 12px; margin-top: 12px; }
+    .story-grid { display: grid; gap: 12px; margin-top: 12px; }
     .box {
       background: var(--surface-strong);
       border: 1px solid var(--line);
@@ -244,7 +243,7 @@
     @media (min-width: 768px) {
       .page { padding-top: 22px; padding-bottom: 56px; }
       .hero, .card { padding: 28px; }
-      .grid2, .story-grid, .summary-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .story-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
       .month-meta { grid-template-columns: repeat(2, minmax(0,1fr)); }
     }
     @media (max-width: 560px) {
@@ -258,24 +257,24 @@
   <main class="page">
     <section class="hero">
       <div class="eyebrow">自由棧 × 美仁寓 對帳明細</div>
-      <h1>截至 2026-02，雙方核對後美仁寓應支付自由棧 1,061,235 元</h1>
-      <p>這份頁面只保留對外對帳需要看的重點：原始約定、已抵移轉金額、已付現金、以及 2025-10 到 2026-02 每月租金收益結餘如何逐月抵銷，最後得出目前應付結餘。</p>
+      <h1>截至 2026-02，雙方核對後美仁寓應支付自由棧 961,235 元</h1>
+      <p>本頁以雙方目前確認資料為基準，先按 2025-10 到 2026-02 的五個月結餘逐月沖抵，再扣除 2026-02-13 美仁寓已支付給自由棧的現金 100,000 元，得出目前尚應支付結餘。</p>
       <div class="hero-amount">
         <span>目前應付自由棧結餘</span>
-        <strong>1,061,235 元</strong>
+        <strong>961,235 元</strong>
       </div>
-      <div class="hero-meta">更新時間：2026/03/12 08:07（Asia/Taipei）</div>
+      <div class="hero-meta">更新時間：2026/03/12 12:02（Asia/Taipei）</div>
     </section>
 
     <div class="stack">
       <section class="card callout">
         <h2>對帳結論</h2>
-        <p>依雙方目前已確認資料，先以前期尚待沖抵金額為基準，再扣入 2025-10 至 2026-02 的每月租金收益結餘。計算到 2026-02 為止，前期未結清款已全數抵完，且後續累計轉為 <strong>美仁寓應支付自由棧 1,061,235 元</strong>。</p>
+        <p>依雙方目前已確認資料，先以前期尚待沖抵金額為基準，扣入 2025-10 至 2026-02 的每月租金收益結餘後，原始應付方向已轉為美仁寓應支付自由棧 <strong>1,061,235 元</strong>；再扣除 2026-02-13 已支付現金 <strong>100,000 元</strong>，截至 2026-02 目前尚應支付自由棧 <strong>961,235 元</strong>。</p>
       </section>
 
       <section class="card">
         <h2>交易起點與目前對帳基準</h2>
-        <p class="muted">這裡先把雙方合作的起始條件說清楚，避免直接看月表時不知道從哪裡開始算。</p>
+        <p class="muted">先把合作起始條件、沖抵基礎與後續已付款項分開列示，避免把五個月結餘與現金收付混在一起看。</p>
         <div class="story-grid">
           <div class="box">
             <span>約定購買金額</span>
@@ -285,7 +284,7 @@
           <div class="box">
             <span>押金移轉抵扣</span>
             <strong>1,565,200 元</strong>
-            <em>由押金承接先行抵扣。</em>
+            <em>承接租客押金後，先列入購買價款沖抵。</em>
           </div>
           <div class="box">
             <span>已另行支付現金</span>
@@ -304,117 +303,40 @@
         <h2>每月租金收益結餘如何抵銷</h2>
         <p class="muted">下列為 2025-10 到 2026-02 五個月份，四案合計後可用於抵銷的每月結餘，以及抵銷後的月末狀態。</p>
         <div class="months">
-          
-    <article class="month-card">
-      <div class="month-top">
-        <div>
-          <div class="month-label">2025-10</div>
-          <h3>700,568 元</h3>
+          <article class="month-card"><div class="month-top"><div><div class="month-label">2025-10</div><h3>700,568 元</h3></div><span class="month-chip">本月結餘</span></div><p class="month-note">當月租金收益結餘，全數用於抵銷前期未結清款。</p><div class="month-meta"><div><span>本月列入抵銷</span><strong>700,568 元</strong></div><div><span>月末狀態</span><strong>月底尚待抵銷：600,621 元</strong></div></div></article>
+          <article class="month-card"><div class="month-top"><div><div class="month-label">2025-11</div><h3>415,464 元</h3></div><span class="month-chip">本月結餘</span></div><p class="month-note">持續以當月結餘抵銷。</p><div class="month-meta"><div><span>本月列入抵銷</span><strong>415,464 元</strong></div><div><span>月末狀態</span><strong>月底尚待抵銷：185,157 元</strong></div></div></article>
+          <article class="month-card"><div class="month-top"><div><div class="month-label">2025-12</div><h3>415,464 元</h3></div><span class="month-chip">本月結餘</span></div><p class="month-note">本月先將剩餘 185,157 元抵清，超出的 230,307 元開始轉為美仁寓應付自由棧。</p><div class="month-meta"><div><span>本月列入抵銷</span><strong>415,464 元</strong></div><div><span>月末狀態</span><strong>月底改為美仁寓應付自由棧：230,307 元</strong></div></div></article>
+          <article class="month-card"><div class="month-top"><div><div class="month-label">2026-01</div><h3>415,464 元</h3></div><span class="month-chip">本月結餘</span></div><p class="month-note">本月結餘累加為美仁寓應付自由棧。</p><div class="month-meta"><div><span>本月列入抵銷</span><strong>415,464 元</strong></div><div><span>月末狀態</span><strong>月底改為美仁寓應付自由棧：645,771 元</strong></div></div></article>
+          <article class="month-card"><div class="month-top"><div><div class="month-label">2026-02</div><h3>415,464 元</h3></div><span class="month-chip">本月結餘</span></div><p class="month-note">若只計入五個月結餘沖抵，截至 2026-02 美仁寓應付自由棧為 1,061,235 元。</p><div class="month-meta"><div><span>本月列入抵銷</span><strong>415,464 元</strong></div><div><span>月末狀態</span><strong>月底改為美仁寓應付自由棧：1,061,235 元</strong></div></div></article>
         </div>
-        <span class="month-chip">本月結餘</span>
-      </div>
-      <p class="month-note">當月租金收益結餘，全數用於抵銷前期未結清款。</p>
-      <div class="month-meta">
-        <div><span>本月列入抵銷</span><strong>700,568 元</strong></div>
-        <div><span>月末狀態</span><strong>月底尚待抵銷：600,621 元</strong></div>
-      </div>
-    </article>
-  
-    <article class="month-card">
-      <div class="month-top">
-        <div>
-          <div class="month-label">2025-11</div>
-          <h3>415,464 元</h3>
-        </div>
-        <span class="month-chip">本月結餘</span>
-      </div>
-      <p class="month-note">持續以當月結餘抵銷。</p>
-      <div class="month-meta">
-        <div><span>本月列入抵銷</span><strong>415,464 元</strong></div>
-        <div><span>月末狀態</span><strong>月底尚待抵銷：185,157 元</strong></div>
-      </div>
-    </article>
-  
-    <article class="month-card">
-      <div class="month-top">
-        <div>
-          <div class="month-label">2025-12</div>
-          <h3>415,464 元</h3>
-        </div>
-        <span class="month-chip">本月結餘</span>
-      </div>
-      <p class="month-note">本月先將剩餘 185,157 元抵清，超出的 230,307 元開始轉為美仁寓應付自由棧。</p>
-      <div class="month-meta">
-        <div><span>本月列入抵銷</span><strong>415,464 元</strong></div>
-        <div><span>月末狀態</span><strong>月底改為美仁寓應付自由棧：230,307 元</strong></div>
-      </div>
-    </article>
-  
-    <article class="month-card">
-      <div class="month-top">
-        <div>
-          <div class="month-label">2026-01</div>
-          <h3>415,464 元</h3>
-        </div>
-        <span class="month-chip">本月結餘</span>
-      </div>
-      <p class="month-note">本月結餘累加為美仁寓應付自由棧。</p>
-      <div class="month-meta">
-        <div><span>本月列入抵銷</span><strong>415,464 元</strong></div>
-        <div><span>月末狀態</span><strong>月底改為美仁寓應付自由棧：645,771 元</strong></div>
-      </div>
-    </article>
-  
-    <article class="month-card">
-      <div class="month-top">
-        <div>
-          <div class="month-label">2026-02</div>
-          <h3>415,464 元</h3>
-        </div>
-        <span class="month-chip">本月結餘</span>
-      </div>
-      <p class="month-note">截至 2026-02，美仁寓應付自由棧結餘為 1,061,235 元。</p>
-      <div class="month-meta">
-        <div><span>本月列入抵銷</span><strong>415,464 元</strong></div>
-        <div><span>月末狀態</span><strong>月底改為美仁寓應付自由棧：1,061,235 元</strong></div>
-      </div>
-    </article>
-  
+      </section>
+
+      <section class="card">
+        <h2>已支付現金款項</h2>
+        <p class="muted">除五個月結餘沖抵外，2026-02-13 另有一筆已支付現金，需自應付結餘中扣除。</p>
+        <div class="mini-list">
+          <div class="mini-row">
+            <span>2026-02-13 美仁寓支付自由棧現金</span>
+            <strong>100,000 元</strong>
+          </div>
         </div>
       </section>
 
       <section class="card result-card">
         <h2>五個月累計後的最終結果</h2>
-        <p class="muted">前期尚待沖抵金額 1,301,189 元，扣入這五個月累計租金收益結餘 2,362,424 元後，差額為 1,061,235 元，方向已轉為美仁寓應支付自由棧。</p>
-        <strong class="big">1,061,235 元</strong>
-        <p>若雙方對本頁內容無異議，建議先依此金額進行付款，後續再按照每月固定結算流程持續更新。</p>
+        <p class="muted">前期尚待沖抵金額 1,301,189 元，扣入五個月累計租金收益結餘 2,362,424 元後，原始差額為 1,061,235 元；再扣除已支付現金 100,000 元後，截至 2026-02 尚應支付自由棧 961,235 元。</p>
+        <strong class="big">961,235 元</strong>
+        <p>若雙方對本頁內容無異議，建議後續對帳與付款皆以此餘額為基準持續更新。</p>
       </section>
 
       <section class="card">
         <h2>四案五個月累計結餘分布</h2>
-        <p class="muted">這裡只保留對帳需要的四案累計結餘，方便確認五個月總數的來源。</p>
+        <p class="muted">這裡保留四案五個月累計結餘，方便確認總數來源；此區塊尚未扣除 2026-02-13 的現金付款。</p>
         <div class="mini-list">
-          
-  <div class="mini-row">
-    <span>景新496</span>
-    <strong>292,030 元</strong>
-  </div>
-
-  <div class="mini-row">
-    <span>景新406</span>
-    <strong>236,837 元</strong>
-  </div>
-
-  <div class="mini-row">
-    <span>景新367</span>
-    <strong>391,097 元</strong>
-  </div>
-
-  <div class="mini-row">
-    <span>文化48+50</span>
-    <strong>1,442,460 元</strong>
-  </div>
-
+          <div class="mini-row"><span>景新496</span><strong>292,030 元</strong></div>
+          <div class="mini-row"><span>景新406</span><strong>236,837 元</strong></div>
+          <div class="mini-row"><span>景新367</span><strong>391,097 元</strong></div>
+          <div class="mini-row"><span>文化48+50</span><strong>1,442,460 元</strong></div>
           <div class="mini-row"><span>合計</span><strong>2,362,424 元</strong></div>
         </div>
       </section>
